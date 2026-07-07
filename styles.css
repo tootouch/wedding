@@ -347,10 +347,9 @@ img {
 
 .family-line {
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: repeat(2, max-content);
   justify-content: center;
-  column-gap: 28px;
-  row-gap: 4px;
+  column-gap: 36px;
   width: min(100%, 22rem);
   margin: 30px auto 0;
   color: var(--ink);
@@ -359,22 +358,20 @@ img {
 }
 
 .family-line p {
-  display: contents;
+  display: inline-flex;
+  gap: 12px;
+  align-items: baseline;
   margin: 0;
+  white-space: nowrap;
 }
 
 .family-line__relation {
   display: inline-flex;
-  grid-column: 2;
-  justify-self: start;
-  gap: 7px;
   align-items: baseline;
   white-space: nowrap;
 }
 
 .family-line strong {
-  grid-column: 1;
-  justify-self: end;
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 900;
@@ -2428,8 +2425,8 @@ img {
     font-size: 0.84rem;
   }
 
-  .family-line__relation {
-    gap: 5px;
+  .family-line p {
+    gap: 8px;
   }
 
   .family-line strong {
