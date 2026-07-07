@@ -366,16 +366,16 @@ img {
 
 .family-line__relation {
   display: inline-flex;
-  grid-column: 1;
-  justify-self: end;
+  grid-column: 2;
+  justify-self: start;
   gap: 7px;
   align-items: baseline;
   white-space: nowrap;
 }
 
 .family-line strong {
-  grid-column: 2;
-  justify-self: start;
+  grid-column: 1;
+  justify-self: end;
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 900;
