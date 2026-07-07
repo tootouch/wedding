@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6eadb" />
+    <meta
+      name="description"
+      content="재혁과 소진의 결혼식에 소중한 분들을 초대합니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tootouch.github.io/wedding/" />
+    <meta property="og:title" content="재혁 &amp; 소진의 결혼식에 초대합니다" />
+    <meta
+      property="og:description"
+      content="2026년 9월 20일 일요일 오후 6시 10분, 라마다 호텔 신도림 5층 세인트그레이스홀"
+    />
+    <meta property="og:image" content="https://tootouch.github.io/wedding/assets/cover.jpeg?v=cover-202606241051" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://tootouch.github.io/wedding/assets/cover.jpeg?v=cover-202606241051" />
+    <title>재혁 &amp; 소진의 모바일 청첩장</title>
+    <link rel="preload" href="assets/cover.jpeg?v=cover-202606241051" as="image" />
+    <link rel="stylesheet" href="styles.css?v=20260626-gallery-native-snap" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+    <script src="assets/gallery-manifest.js?v=gallery-20260625115554" defer></script>
+    <script src="script.js?v=20260626-gallery-native-snap" defer></script>
+  </head>
+  <body>
+    <main class="invitation-shell">
+      <section class="hero" aria-labelledby="couple-names">
+        <img
+          class="hero__image"
+          src="assets/cover.jpeg?v=cover-202606241051"
+          alt="재혁과 소진의 웨딩 대표 사진"
+        />
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Wedding Invitation</p>
+          <h1 id="couple-names"><span data-field="groomFirst"></span> &amp; <span data-field="brideFirst"></span></h1>
+          <p class="hero__date" data-field="weddingDateLabel"></p>
+          <p class="hero__venue" data-field="venueDetail"></p>
+        </div>
+      </section>
+
+      <nav class="quick-actions" aria-label="초대장 주요 메뉴">
+        <a href="#calendar" class="quick-actions__item">
+          <i data-lucide="calendar-days" aria-hidden="true"></i>
+          <span>일정</span>
+        </a>
+        <a href="#location" class="quick-actions__item">
+          <i data-lucide="map-pinned" aria-hidden="true"></i>
+          <span>위치</span>
+        </a>
+        <a href="#rsvp" class="quick-actions__item">
+          <i data-lucide="clipboard-check" aria-hidden="true"></i>
+          <span>참석</span>
+        </a>
+        <button class="quick-actions__item" type="button" data-action="share">
+          <i data-lucide="send" aria-hidden="true"></i>
+          <span>공유</span>
+        </button>
+      </nav>
+
+      <section class="intro section-band">
+        <p class="section-kicker">초대합니다</p>
+        <div class="intro-message">
+          <p>
+            가을 향기가 짙어지는 일요일 저녁,<br />
+            소중한 분들을 모시고<br />
+            새로운 시작을 알리려 합니다.<br />
+            특별한 순간보다 매일 마주하는<br />
+            소소한 일상에서<br />
+            편안한 안식처가 되어주겠습니다.
+          </p>
+          <p>
+            휴일 저녁이라는 귀한 시간을 내어주신 만큼,<br />
+            서로를 아끼는 모습으로 보답하겠습니다.
+          </p>
+        </div>
+        <div class="family-line" aria-label="신랑 신부 소개">
+          <p>
+            <span class="family-line__relation">신랑</span>
+            <strong data-field="groomFull"></strong>
+          </p>
+          <p>
+            <span class="family-line__relation">신부</span>
+            <strong data-field="brideFull"></strong>
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery section-band" aria-labelledby="gallery-title">
+        <p class="section-kicker">Gallery</p>
+        <h2 id="gallery-title">기억하고 싶은 장면들</h2>
+        <div class="gallery-viewer" aria-label="웨딩 사진">
+          <div class="gallery-stage">
+            <button class="gallery-inline-nav gallery-inline-nav--prev" type="button" data-gallery-inline-prev aria-label="이전 사진">
+              <i data-lucide="chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="gallery-main" type="button" data-gallery-main-open aria-label="사진 크게 보기">
+              <img src="assets/gallery-large/gallery-001.jpg?v=gallery-20260625115554" alt="재혁과 소진의 웨딩 사진" data-gallery-main-image />
+            </button>
+            <button class="gallery-inline-nav gallery-inline-nav--next" type="button" data-gallery-inline-next aria-label="다음 사진">
+              <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="gallery-thumbs" data-gallery-grid aria-label="웨딩 사진 썸네일"></div>
+        </div>
+      </section>
+
+      <section id="calendar" class="calendar section-band" aria-labelledby="calendar-title">
+        <div class="d-day-count">
+          <video class="d-day-count__video" autoplay muted loop playsinline preload="metadata" poster="assets/dday_count/HKS01665.jpg?v=20260623-dday-bg-edit" aria-hidden="true">
+            <source src="assets/dday_count/dday_video.mp4" type="video/mp4" />
+          </video>
+          <div class="d-day-count__content">
+            <p>D-DAY COUNT</p>
+            <h2 id="calendar-title">
+              <span data-field="groomFirst"></span> &amp; <span data-field="brideFirst"></span>의 결혼식까지
+            </h2>
+            <div class="d-day-count__chips" aria-label="예식까지 남은 시간">
+              <div class="d-day-count__chip">
+                <strong data-countdown="days">0</strong>
+                <span>DAYS</span>
+              </div>
+              <div class="d-day-count__chip">
+                <strong data-countdown="hoursPadded">00</strong>
+                <span>HOURS</span>
+              </div>
+              <div class="d-day-count__chip">
+                <strong data-countdown="minutesPadded">00</strong>
+                <span>MIN</span>
+              </div>
+            </div>
+            <p class="d-day-count__date">2026.09.20 SUN 6:10 PM</p>
+            <button class="d-day-count__save" type="button" data-action="calendar">
+              <i data-lucide="calendar-plus" aria-hidden="true"></i>
+              <span>일정 저장</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="location section-band" aria-labelledby="location-title">
+        <p class="section-kicker">LOCATION</p>
+        <h2 id="location-title">오시는 길</h2>
+        <div class="location-meta" aria-label="예식장 주소와 홀 정보">
+          <p class="location-meta__venue">
+            <span class="location-meta__building" data-field="venue"></span>
+            <strong class="location-meta__hall" data-field="venueHall"></strong>
+          </p>
+          <p class="location-meta__address" data-field="address"></p>
+        </div>
+        <div class="location-layout">
+          <div class="location-map-column">
+            <div class="map-preview" aria-label="라마다 호텔 신도림 위치 지도">
+              <iframe
+                class="map-preview__frame"
+                title="라마다 호텔 신도림 위치 지도"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=126.8829%2C37.5047%2C126.8878%2C37.5079&amp;layer=mapnik&amp;marker=37.50625443087106%2C126.88535657308628"
+                loading="lazy"
+              ></iframe>
+              <a class="map-preview__button" data-map="kakao" target="_blank" rel="noreferrer" aria-label="카카오맵에서 길찾기">
+                <i data-lucide="map-pin" aria-hidden="true"></i>
+                <span>카카오 길찾기</span>
+                <i data-lucide="chevron-right" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="navigation-panel">
+              <h3>내비게이션</h3>
+              <p>버튼을 누르면 앱에서 길안내가 시작됩니다.</p>
+              <div class="navigation-actions">
+                <a class="navigation-button navigation-button--naver" data-map="naver" target="_blank" rel="noreferrer">
+                  <span class="app-icon app-icon--naver" aria-hidden="true">N</span>
+                  <span>네이버지도</span>
+                </a>
+                <a class="navigation-button navigation-button--kakao" data-map="kakao" target="_blank" rel="noreferrer">
+                  <span class="app-icon app-icon--kakao" aria-hidden="true">
+                    <i data-lucide="map-pin" aria-hidden="true"></i>
+                  </span>
+                  <span>카카오맵</span>
+                </a>
+                <a class="navigation-button navigation-button--tmap" data-map="tmap">
+                  <span class="app-icon app-icon--tmap" aria-hidden="true">T</span>
+                  <span>티맵</span>
+                </a>
+                <button class="navigation-button navigation-button--copy" type="button" data-copy="address" data-copy-message="주소를 복사했어요.">
+                  <span class="app-icon app-icon--copy" aria-hidden="true">
+                    <i data-lucide="copy" aria-hidden="true"></i>
+                  </span>
+                  <span>주소복사</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="direction-guide" aria-label="교통 안내">
+            <article class="direction-block">
+              <h3>자가용</h3>
+              <p>
+                내비게이션에서 <strong>라마다서울신도림호텔</strong>을 검색해 주세요.
+              </p>
+              <p class="direction-note">*웨딩 하객은 1시간 30분 무료 주차가 가능합니다.</p>
+            </article>
+            <article class="direction-block">
+              <h3>지하철</h3>
+              <p>
+                <strong>1·2호선 신도림역 1번 출구</strong>에서 하차 후 도보 약 5분 거리입니다.
+                1번 출구 앞 신도림광장 횡단보도 인근에서 셔틀버스 탑승이 가능합니다.
+              </p>
+              <ol class="walking-route" aria-label="도보 이동 경로">
+                <li>신도림역 1번 출구</li>
+                <li>현대백화점 디큐브시티</li>
+                <li>GS칼텍스 주유소</li>
+                <li>SK VIEW</li>
+                <li>호텔</li>
+              </ol>
+            </article>
+            <article class="direction-block">
+              <h3>버스</h3>
+              <p>
+                신도림역·구로역 정류장 이용이 편리합니다.
+              </p>
+              <ul class="bus-route-list" aria-label="정차 버스 노선">
+                <li>간선 160, 503, 600, 662, 660, N16</li>
+                <li>지선 6513, 6515, 6516, 6637, 6640B</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rsvp" class="rsvp section-band" aria-labelledby="rsvp-title">
+        <p class="section-kicker">RSVP</p>
+        <h2 id="rsvp-title">참석 의사 전달하기</h2>
+        <p class="section-note">
+          준비에 참고할 수 있도록<br />
+          참석 여부와 식사 인원을 알려주세요.
+        </p>
+        <button class="form-open-button" type="button" data-rsvp-open>
+          <i data-lucide="clipboard-check" aria-hidden="true"></i>
+          <span>참석 의사 작성하기</span>
+        </button>
+      </section>
+
+      <section class="guestbook section-band" aria-labelledby="guestbook-title">
+        <p class="section-kicker">GUEST BOOK</p>
+        <h2 id="guestbook-title">축하 메시지를 남겨주세요</h2>
+        <p class="section-note">
+          남겨주신 축하 메시지는<br />
+          신랑 &amp; 신부에게만 전달됩니다.<br />
+          따뜻한 마음을 조용히 간직하겠습니다.
+        </p>
+        <button class="form-open-button" type="button" data-guestbook-open>
+          <i data-lucide="mail" aria-hidden="true"></i>
+          <span>축하 메시지 작성하기</span>
+        </button>
+      </section>
+
+    </main>
+
+    <dialog class="gallery-dialog" data-gallery-dialog>
+      <button class="icon-button gallery-dialog__close" type="button" data-gallery-close aria-label="닫기">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <button class="gallery-dialog__nav gallery-dialog__nav--prev" type="button" data-gallery-prev aria-label="이전 사진">
+        <i data-lucide="chevron-left" aria-hidden="true"></i>
+      </button>
+      <figure class="gallery-dialog__figure">
+        <div class="gallery-dialog__slider" data-gallery-slider aria-label="확대된 웨딩 사진"></div>
+        <div class="gallery-swipe-hint" aria-hidden="true">
+          <span></span>
+          <strong>좌우로 넘겨보세요</strong>
+          <span></span>
+        </div>
+        <figcaption>
+          <span data-gallery-caption></span>
+          <span data-gallery-counter></span>
+        </figcaption>
+      </figure>
+      <button class="gallery-dialog__nav gallery-dialog__nav--next" type="button" data-gallery-next aria-label="다음 사진">
+        <i data-lucide="chevron-right" aria-hidden="true"></i>
+      </button>
+    </dialog>
+
+    <dialog class="form-dialog" data-rsvp-dialog>
+      <div class="form-dialog__content">
+        <button class="icon-button form-dialog__close" type="button" data-rsvp-close aria-label="닫기">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <h2>참석 의사 작성하기</h2>
+        <form class="rsvp-form" data-rsvp-form>
+          <label>
+            <span>성함</span>
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <fieldset>
+            <legend>참석 여부</legend>
+            <div class="segmented">
+              <label>
+                <input type="radio" name="attendance" value="참석" checked />
+                <span>참석</span>
+              </label>
+              <label>
+                <input type="radio" name="attendance" value="불참" />
+                <span>불참</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>어느 쪽 하객이신가요?</legend>
+            <div class="segmented">
+              <label>
+                <input type="radio" name="side" value="신랑측" checked />
+                <span>신랑측</span>
+              </label>
+              <label>
+                <input type="radio" name="side" value="신부측" />
+                <span>신부측</span>
+              </label>
+            </div>
+          </fieldset>
+          <label>
+            <span>동행 인원</span>
+            <select name="guests">
+              <option value="0">본인만</option>
+              <option value="1">1명</option>
+              <option value="2">2명</option>
+              <option value="3">3명 이상</option>
+            </select>
+          </label>
+          <label>
+            <span>식사 인원</span>
+            <select name="meal">
+              <option value="0">식사 안 함</option>
+              <option value="1" selected>1명</option>
+              <option value="2">2명</option>
+              <option value="3">3명 이상</option>
+            </select>
+          </label>
+          <label>
+            <span>전하실 말씀</span>
+            <textarea name="memo" rows="3" placeholder="선택 입력"></textarea>
+          </label>
+          <button class="primary-button" type="submit">
+            <i data-lucide="check" aria-hidden="true"></i>
+            <span>참석 의사 보내기</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog class="form-dialog form-dialog--guestbook" data-guestbook-dialog>
+      <div class="form-dialog__content">
+        <button class="icon-button form-dialog__close" type="button" data-guestbook-close aria-label="닫기">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <h2>축하 메시지 작성하기</h2>
+        <form class="guestbook-form" data-guestbook-form>
+          <fieldset>
+            <legend class="sr-only">받는 사람</legend>
+            <div class="segmented">
+              <label>
+                <input type="radio" name="target" value="신랑" checked />
+                <span>To. 신랑에게</span>
+              </label>
+              <label>
+                <input type="radio" name="target" value="신부" />
+                <span>To. 신부에게</span>
+              </label>
+            </div>
+          </fieldset>
+          <label class="guestbook-message-field">
+            <textarea name="message" rows="4" required placeholder="결혼 축하합니다!"></textarea>
+          </label>
+          <label>
+            <span>성함 <em>*</em></span>
+            <small>신랑신부에게 전달될 이름을 적어주세요.</small>
+            <input name="name" type="text" autocomplete="name" required placeholder="홍길동" />
+          </label>
+          <label>
+            <span>관계</span>
+            <small>신랑 또는 신부와의 관계를 적어주세요. (생략 가능)</small>
+            <input name="relation" type="text" placeholder="한국고 동문, 친구, 사촌동생" />
+          </label>
+          <button class="secondary-button" type="submit">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <span>축하 메시지 보내기</span>
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <div class="message-effect" data-message-effect role="status" aria-live="polite" aria-hidden="true">
+      <div class="message-effect__card">
+        <div class="message-effect__petals" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="message-effect__envelope" aria-hidden="true">
+          <span class="message-effect__letter"></span>
+          <span class="message-effect__flap"></span>
+          <span class="message-effect__body"></span>
+        </div>
+        <p>소중한 마음이 전해졌습니다</p>
+      </div>
+    </div>
+
+    <div class="music-control" data-music-control>
+      <audio data-music-audio preload="metadata"></audio>
+      <div class="music-control__buttons">
+        <button class="music-control__toggle" type="button" data-music-toggle aria-pressed="false">
+          <i data-lucide="music-2" aria-hidden="true"></i>
+          <span data-music-status>음악</span>
+          <small data-music-track>BGM 1</small>
+        </button>
+        <button class="music-control__next" type="button" data-music-next aria-label="다음 배경음악">
+          <i data-lucide="skip-forward" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>
