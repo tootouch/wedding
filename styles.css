@@ -83,8 +83,7 @@ img {
 
 #calendar,
 #location,
-#gift,
-#rsvp {
+#gift {
   scroll-margin-top: 96px;
 }
 
@@ -1024,7 +1023,6 @@ img {
 }
 
 .gift,
-.rsvp,
 .flower,
 .guestbook {
   background: #f3eee7;
@@ -1286,7 +1284,6 @@ img {
   height: 21px;
 }
 
-.rsvp-form,
 .guestbook-form,
 .delete-form {
   display: grid;
@@ -1295,8 +1292,6 @@ img {
   text-align: left;
 }
 
-.rsvp-form label,
-.rsvp-form fieldset,
 .guestbook-form label,
 .guestbook-form fieldset,
 .delete-form label {
@@ -1306,8 +1301,6 @@ img {
   margin: 0;
 }
 
-.rsvp-form label > span,
-.rsvp-form legend,
 .guestbook-form label > span,
 .guestbook-form legend,
 .delete-form label > span {
@@ -1328,9 +1321,6 @@ img {
   font-style: normal;
 }
 
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea,
 .guestbook-form input,
 .guestbook-form textarea,
 .delete-form input {
@@ -1343,7 +1333,6 @@ img {
   color: var(--ink);
 }
 
-.rsvp-form textarea,
 .guestbook-form textarea {
   min-height: 104px;
   padding-top: 13px;
@@ -1359,7 +1348,6 @@ img {
   margin-top: 6px;
 }
 
-.rsvp-form fieldset,
 .guestbook-form fieldset {
   border: 0;
   padding: 0;
@@ -1430,12 +1418,6 @@ img {
   color: var(--white);
 }
 
-.rsvp-form .primary-button {
-  border-radius: 0;
-  background: var(--ink);
-}
-
-.rsvp-form .primary-button:disabled,
 .guestbook-form .secondary-button:disabled,
 .delete-form .primary-button:disabled {
   cursor: wait;

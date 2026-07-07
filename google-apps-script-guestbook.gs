@@ -1,18 +1,5 @@
 const SPREADSHEET_ID = "";
 
-const RSVP_SHEET_NAME = "RSVP";
-const RSVP_HEADERS = [
-  "submittedAt",
-  "name",
-  "phone",
-  "attendance",
-  "side",
-  "guests",
-  "meal",
-  "memo",
-  "source",
-];
-
 const GUESTBOOK_SHEET_NAME = "GUESTBOOK";
 const GUESTBOOK_HEADERS = [
   "id",
@@ -29,12 +16,7 @@ const GUESTBOOK_HEADERS = [
 function doPost(e) {
   const payload = JSON.parse((e && e.postData && e.postData.contents) || "{}");
 
-  if (payload.action === "createGuestbook") {
-    return output_({ ok: true, item: createGuestbook_(payload) });
-  }
-
-  appendRsvp_(payload);
-  return output_({ ok: true });
+  return output_({ ok: true, item: createGuestbook_(payload) });
 }
 
 function doGet() {
@@ -44,24 +26,7 @@ function doGet() {
 }
 
 function setup() {
-  getSheet_(RSVP_SHEET_NAME, RSVP_HEADERS);
   getSheet_(GUESTBOOK_SHEET_NAME, GUESTBOOK_HEADERS);
-}
-
-function appendRsvp_(payload) {
-  const sheet = getSheet_(RSVP_SHEET_NAME, RSVP_HEADERS);
-
-  sheet.appendRow([
-    payload.submittedAt || new Date().toISOString(),
-    payload.name || "",
-    payload.phone || "",
-    payload.attendance || "",
-    payload.side || "",
-    payload.guests || "",
-    payload.meal || "",
-    payload.memo || "",
-    payload.source || "",
-  ]);
 }
 
 function createGuestbook_(payload) {

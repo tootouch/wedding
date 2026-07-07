@@ -52,10 +52,6 @@
           <i data-lucide="map-pinned" aria-hidden="true"></i>
           <span>위치</span>
         </a>
-        <a href="#rsvp" class="quick-actions__item">
-          <i data-lucide="clipboard-check" aria-hidden="true"></i>
-          <span>참석</span>
-        </a>
         <button class="quick-actions__item" type="button" data-action="share">
           <i data-lucide="send" aria-hidden="true"></i>
           <span>공유</span>
@@ -230,19 +226,6 @@
         </div>
       </section>
 
-      <section id="rsvp" class="rsvp section-band" aria-labelledby="rsvp-title">
-        <p class="section-kicker">RSVP</p>
-        <h2 id="rsvp-title">참석 의사 전달하기</h2>
-        <p class="section-note">
-          준비에 참고할 수 있도록<br />
-          참석 여부와 식사 인원을 알려주세요.
-        </p>
-        <button class="form-open-button" type="button" data-rsvp-open>
-          <i data-lucide="clipboard-check" aria-hidden="true"></i>
-          <span>참석 의사 작성하기</span>
-        </button>
-      </section>
-
       <section class="guestbook section-band" aria-labelledby="guestbook-title">
         <p class="section-kicker">GUEST BOOK</p>
         <h2 id="guestbook-title">축하 메시지를 남겨주세요</h2>
@@ -281,73 +264,6 @@
       <button class="gallery-dialog__nav gallery-dialog__nav--next" type="button" data-gallery-next aria-label="다음 사진">
         <i data-lucide="chevron-right" aria-hidden="true"></i>
       </button>
-    </dialog>
-
-    <dialog class="form-dialog" data-rsvp-dialog>
-      <div class="form-dialog__content">
-        <button class="icon-button form-dialog__close" type="button" data-rsvp-close aria-label="닫기">
-          <i data-lucide="x" aria-hidden="true"></i>
-        </button>
-        <h2>참석 의사 작성하기</h2>
-        <form class="rsvp-form" data-rsvp-form>
-          <label>
-            <span>성함</span>
-            <input name="name" type="text" autocomplete="name" required />
-          </label>
-          <fieldset>
-            <legend>참석 여부</legend>
-            <div class="segmented">
-              <label>
-                <input type="radio" name="attendance" value="참석" checked />
-                <span>참석</span>
-              </label>
-              <label>
-                <input type="radio" name="attendance" value="불참" />
-                <span>불참</span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>어느 쪽 하객이신가요?</legend>
-            <div class="segmented">
-              <label>
-                <input type="radio" name="side" value="신랑측" checked />
-                <span>신랑측</span>
-              </label>
-              <label>
-                <input type="radio" name="side" value="신부측" />
-                <span>신부측</span>
-              </label>
-            </div>
-          </fieldset>
-          <label>
-            <span>동행 인원</span>
-            <select name="guests">
-              <option value="0">본인만</option>
-              <option value="1">1명</option>
-              <option value="2">2명</option>
-              <option value="3">3명 이상</option>
-            </select>
-          </label>
-          <label>
-            <span>식사 인원</span>
-            <select name="meal">
-              <option value="0">식사 안 함</option>
-              <option value="1" selected>1명</option>
-              <option value="2">2명</option>
-              <option value="3">3명 이상</option>
-            </select>
-          </label>
-          <label>
-            <span>전하실 말씀</span>
-            <textarea name="memo" rows="3" placeholder="선택 입력"></textarea>
-          </label>
-          <button class="primary-button" type="submit">
-            <i data-lucide="check" aria-hidden="true"></i>
-            <span>참석 의사 보내기</span>
-          </button>
-        </form>
-      </div>
     </dialog>
 
     <dialog class="form-dialog form-dialog--guestbook" data-guestbook-dialog>
